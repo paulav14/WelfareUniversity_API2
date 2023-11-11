@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center">
+    <div class="col-md-8 mt-4">
+        <h5>Pagos</h5>
+        <table class="table table-sm" id="tablaPagoActualizar">
+            
+            <tbody>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" id="closeModal" onclick="cerrarModal()">&times;</span>
+        <div class="card-body">
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="Usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-contMenu" id="UsuarioModal" required />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Fecha</label>
+                <input type="date" class="form-contMenu" id="FechaPagoModal" required />
+            </div>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Cantidad</label>
+                <input type="number" class="form-contEstado" id="CantidadModal" required />
+            </div>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Concepto</label>
+                <input type="text" class="form-contEstado" id="ConceptoModal" required />
+            </div>
+        </div>
+
+        <div class="card-footer text-muted">
+            <button type="submit" onclick="ActualizaPagoModal()" class="btn btn-primary">Actualizar Pago</button>
+        </div>
+    </div>
+</div>
